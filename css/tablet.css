@@ -1,0 +1,58 @@
+@media (min-width: 576px){
+
+    /*** Globales ***/
+
+    .contenedor{
+        max-width: 85%;
+    }
+    
+    /*** Header ***/
+    .links a:last-child{        
+        font-size: 1.6rem;
+    }
+
+    /*** Hero ***/
+    .hero{     
+        flex-direction: row;        
+        justify-content: space-between;        
+    }
+
+    .hero h1{
+        margin: 1rem 0;
+    }
+
+    .hero-texto{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .hero p{
+        font-size: 1.6rem;     
+    }
+
+    .redes-sociales{
+        margin: 1rem 0;   
+    }
+
+    .redes-sociales p{     
+        font-size: 1.4rem;          
+    }
+
+    .redes-sociales a{
+        margin-right: 2rem;
+    }
+
+    .redes-sociales a img{
+        width: 12px;
+    }
+
+    .hero-imagen img{
+        border-radius: 50%;
+        width: 146px;   
+    }
+    .hero-imagen{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

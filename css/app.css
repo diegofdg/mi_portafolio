@@ -35,17 +35,20 @@ a{
 }
 
 .contenedor{
-    max-width: 85%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
 /*** Header ***/
 
+header{
+    background-color: var(--gris);
+}
+
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 32px 0;
-    background-color: var(--gris);
+    padding: 1.8rem 0;    
 }
 
 .logo{
@@ -58,7 +61,7 @@ a{
     align-items: center;
 }
 
-.vector-big{
+.star-big{
     width: 16px;
     height: 16px;
     position: absolute;
@@ -66,7 +69,7 @@ a{
     left: 1px;
 }
 
-.vector-up{
+.star-up{
     width: 8px;
     height: 8px;
     position: absolute;
@@ -74,7 +77,7 @@ a{
     left: 15px;
 }
 
-.vector-down{
+.star-down{
     width: 8px;
     height: 8px;    
     position: absolute;
@@ -107,18 +110,55 @@ a{
     font-size: 1.4rem;
 }
 
-@media (min-width: 992px){
-    .links{
-        display: flex;        
-        font-weight: 500;
-        justify-content: space-between;        
-    }
+/*** Hero ***/
 
-    .links a{
-        display: block;
-    }
+main{
+    background-color: var(--gris);
+}
 
-    .links a:last-child{        
-        font-size: 1.6rem;
-    }
+.hero{
+    display: flex;    
+    flex-direction: column-reverse;    
+    padding: 1rem 0;
+    background-color: var(--gris);
+}
+
+.hero h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.hero p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.hero-imagen img{
+    border-radius: 50%;
+    width: 98px;    
+}
+
+.redes-sociales{
+    display: flex;    
+    margin: 3rem 0;
+}
+
+.redes-sociales p{  
+    display: inline;  
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--negro);
+    margin-right: .4rem; 
+}
+
+.redes-sociales a{
+    margin-right: .8rem;
+}
+
+.redes-sociales a img{
+    width: 10.5px;    
+}
+
+.redes-sociales a:last-child{
+    margin-right: 0;
 }
