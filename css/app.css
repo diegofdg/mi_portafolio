@@ -5,6 +5,7 @@
 
     --negro: #464646;
     --gris: #F5F5F5;
+    --celeste: #EAF2FD;
 }
 
 /*** Globales ***/
@@ -140,7 +141,7 @@ main{
 
 .redes-sociales{
     display: flex;    
-    margin: 3rem 0;
+    margin: 3rem 0 1rem;
 }
 
 .redes-sociales p{  
@@ -161,4 +162,26 @@ main{
 
 .redes-sociales a:last-child{
     margin-right: 0;
+}
+
+/*** Sobre mi ***/
+section{
+    background-color: var(--celeste);
+}
+
+.sobre-mi{
+    padding: 1.6rem 0;
+}
+
+.sobre-mi h2{
+    font-size: 2.2rem;
+}
+
+.sobre-mi p{
+    font-size: 1.4rem;    
+}
+
+.sobre-mi h2,
+.sobre-mi p{
+    margin-bottom: 1.5rem;
 }

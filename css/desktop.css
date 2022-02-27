@@ -47,4 +47,14 @@
     .redes-sociales a:last-child{
         margin-right: 0;
     }
+
+    /*** Sobre mi ***/
+
+    .sobre-mi h2{
+        font-size: 3.2rem;
+    }
+    
+    .sobre-mi p{
+        font-size: 1.6rem;    
+    }
 }
