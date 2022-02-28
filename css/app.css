@@ -202,6 +202,10 @@ main{
     flex: 1 1 0px;    
 }
 
+.hobbies{
+    padding-bottom: 1.5rem;
+}
+
 .caja-skills,
 .caja-hobbies{
     width: 156px;
@@ -246,4 +250,67 @@ main{
 .caja-hobbies img{
     width: 3rem;
     height: 3rem; 
+}
+
+/*** Formacion ***/
+#formacion{
+    background-color: var(--celeste);        
+}
+
+.formacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1 1 0px;    
+    gap: 2rem;
+}
+
+.caja-formacion{
+    width: 296px;
+    height: 118px;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+.caja-formacion .logo-oracle,
+.caja-formacion .logo-ispc{
+    width: 150px;
+}
+
+.caja-formacion .logo-utn,
+.caja-formacion .logo-ctc,
+.caja-formacion .logo-fceco{
+    width: 200px;
+}
+
+.caja-formacion .logo-gugler{
+    width: 100px;
+}
+
+.texto-formacion h4{
+    font-size: 1.6rem;
+    margin-top: .8rem;
+    margin-bottom: 0;
+}
+
+.texto-formacion p{
+    margin-bottom: 1.6rem;
+}
+
+.texto-formacion h4,
+.texto-formacion p{
+    width: 296px;
+
+}
+
+.caja-formacion img{
+    display: block;
+}
+
+#formacion h2{
+    padding: 3rem 0 3rem;    
+    text-align: center;
 }

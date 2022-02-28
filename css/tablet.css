@@ -56,5 +56,18 @@
     .caja-hobbies{
         width: 224px;
         height: 118px;
-    }    
+    }
+
+    /*** Formacion ***/
+
+    .caja-formacion{
+        width: 224px;
+        height: 118px;
+    }
+
+    .item-formacion{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
