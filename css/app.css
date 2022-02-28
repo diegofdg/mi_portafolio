@@ -187,20 +187,23 @@ main{
     margin-bottom: 1.5rem;
 }
 
-/*** Skills ***/
-#skills{
-    background-color: var(--gris);    
+/*** Skills y Hobbies ***/
+#skills,
+#hobbies{
+    background-color: var(--gris);        
 }
 
-.skills{
+.skills,
+.hobbies{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;    
     gap: 1.6rem;
-    flex: 1 1 0px;
+    flex: 1 1 0px;    
 }
 
-.caja-skills{
+.caja-skills,
+.caja-hobbies{
     width: 156px;
     height: 118px;
     background-color: var(--blanco);
@@ -211,25 +214,36 @@ main{
     padding-left: 1.6rem;
 }
 
-.caja-skills img{
+.caja-skills img,
+.caja-hobbies img{
     display: block;
 }
 
 #skills h2{
-    padding: 1.6rem 0;
+    padding: 1.6rem 0 3rem;    
+}
+
+#hobbies h2{
+    padding: 3rem 0 3rem;
+}
+
+#skills h2,
+#hobbies h2{    
     text-align: center;
 }
 
-.skills h2,
-.skills p{
+.skills p,
+.hobbies p{
     margin-bottom: 1.5rem;
 }
 
-.caja-skills p{
+.caja-skills p,
+.caja-hobbies p{
     font-weight: 700;
 }
 
-.caja-skills img{
+.caja-skills img,
+.caja-hobbies img{
     width: 3rem;
     height: 3rem; 
 }

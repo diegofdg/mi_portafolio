@@ -58,16 +58,19 @@
         font-size: 1.6rem;    
     }
 
-    /*** Skills ***/
-    .skills{
+    /*** Skills y Hobbies ***/
+    .skills,
+    .hobbies{
         flex-wrap: nowrap;
     }
-    .caja-skills{
+    .caja-skills,
+    .caja-hobbies{
         width: 176px;
         height: 174px;
     }
     
-    #skills h2{
+    #skills h2,
+    #hobbies h2{
         font-size: 3.2rem;
     }        
 }

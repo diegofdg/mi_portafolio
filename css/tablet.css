@@ -50,9 +50,10 @@
         justify-content: center;
     }
 
-    /*** Skills ***/
+    /*** Skills y Hobbies ***/
 
-    .caja-skills{
+    .caja-skills,
+    .caja-hobbies{
         width: 224px;
         height: 118px;
     }    
