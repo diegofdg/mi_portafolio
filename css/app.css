@@ -3,9 +3,10 @@
 :root {
     --fuente: 'Raleway', sans-serif;
 
-    --negro: #464646;
-    --gris: #F5F5F5;
+    --negro: #464646; 
+    --blanco: #FFFFFF;
     --celeste: #EAF2FD;
+    --gris: #E5E5E5;
 }
 
 /*** Globales ***/
@@ -165,7 +166,7 @@ main{
 }
 
 /*** Sobre mi ***/
-section{
+#sobre-mi{
     background-color: var(--celeste);
 }
 
@@ -184,4 +185,51 @@ section{
 .sobre-mi h2,
 .sobre-mi p{
     margin-bottom: 1.5rem;
+}
+
+/*** Skills ***/
+#skills{
+    background-color: var(--gris);    
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 1.6rem;
+    flex: 1 1 0px;
+}
+
+.caja-skills{
+    width: 156px;
+    height: 118px;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: .8rem;
+    padding-left: 1.6rem;
+}
+
+.caja-skills img{
+    display: block;
+}
+
+#skills h2{
+    padding: 1.6rem 0;
+    text-align: center;
+}
+
+.skills h2,
+.skills p{
+    margin-bottom: 1.5rem;
+}
+
+.caja-skills p{
+    font-weight: 700;
+}
+
+.caja-skills img{
+    width: 3rem;
+    height: 3rem; 
 }

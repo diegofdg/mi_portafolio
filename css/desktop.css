@@ -1,6 +1,6 @@
 /*** Header ***/
 
-@media (min-width: 992px){
+@media (min-width: 1024px){
 
     /*** Header ***/
     .links{
@@ -57,4 +57,17 @@
     .sobre-mi p{
         font-size: 1.6rem;    
     }
+
+    /*** Skills ***/
+    .skills{
+        flex-wrap: nowrap;
+    }
+    .caja-skills{
+        width: 176px;
+        height: 174px;
+    }
+    
+    #skills h2{
+        font-size: 3.2rem;
+    }        
 }

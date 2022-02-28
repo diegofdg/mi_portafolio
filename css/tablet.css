@@ -1,11 +1,5 @@
-@media (min-width: 576px){
+@media (min-width: 768px){
 
-    /*** Globales ***/
-
-    .contenedor{
-        max-width: 85%;
-    }
-    
     /*** Header ***/
     .links a:last-child{        
         font-size: 1.6rem;
@@ -55,4 +49,11 @@
         align-items: center;
         justify-content: center;
     }
+
+    /*** Skills ***/
+
+    .caja-skills{
+        width: 224px;
+        height: 118px;
+    }    
 }
