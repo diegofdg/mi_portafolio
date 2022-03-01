@@ -1,8 +1,7 @@
-/*** Header ***/
-
 @media (min-width: 1024px){
 
     /*** Header ***/
+
     .links{
         display: flex;        
         font-weight: 500;
@@ -50,15 +49,23 @@
 
     /*** Sobre mi ***/
 
-    .sobre-mi h2{
+    .sobre-mi h2,
+    #skills h2,
+    #hobbies h2,
+    #formacion h2,
+    #experiencia h2,
+    #contacto h2{
         font-size: 3.2rem;
     }
     
-    .sobre-mi p{
+    .sobre-mi p,
+    .texto-formacion p,
+    .texto-experiencia p{
         font-size: 1.6rem;    
     }
 
     /*** Skills y Hobbies ***/
+    
     .skills,
     .hobbies{
         flex-wrap: nowrap;
@@ -69,11 +76,6 @@
         height: 174px;
     }
     
-    #skills h2,
-    #hobbies h2{
-        font-size: 3.2rem;
-    }     
-    
     /*** Formacion ***/
 
     .caja-formacion{
@@ -81,10 +83,11 @@
         height: 286px;
     }
 
-    .texto-formacion h4{
+    .texto-formacion h4,
+    .texto-experiencia h4{
         font-size: 2.2rem;        
     }
-    
+
     .caja-formacion .logo-oracle,
     .caja-formacion .logo-ispc{
         width: 250px;
@@ -100,5 +103,41 @@
         width: 200px;
     }
 
+     /*** Experiencia ***/
 
+     .item-experiencia{
+        display: flex;        
+        gap: 1.6rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .reverse {        
+        flex-direction: row-reverse;
+    }
+
+    .texto-experiencia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .boton-repositorio,
+    .boton-demo,
+    .boton-enviar{
+        font-size: 1.6rem;
+    }
+
+    /*** Contacto ***/
+    
+    .contacto {
+        display: flex;
+        justify-content: center;
+        padding-top: 6rem;
+        gap: 1.6rem;
+    }
+
+    .contacto-imagen{
+        display: block;
+        width: 464px;
+    }
 }

@@ -1,11 +1,13 @@
 @media (min-width: 768px){
 
     /*** Header ***/
+
     .links a:last-child{        
         font-size: 1.6rem;
     }
 
     /*** Hero ***/
+    
     .hero{     
         flex-direction: row;        
         justify-content: space-between;        
@@ -20,16 +22,14 @@
         flex-direction: column;        
     }
 
-    .hero p{
+    .hero p,
+    .redes-sociales p,
+    .footer{
         font-size: 1.6rem;     
     }
 
     .redes-sociales{
         margin: 1rem 0;   
-    }
-
-    .redes-sociales p{     
-        font-size: 1.4rem;          
     }
 
     .redes-sociales a{
@@ -69,5 +69,17 @@
         display: flex;
         flex-direction: column;
     }
-    
+
+    /*** Experiencia ***/
+
+    .caja-experiencia{
+        width: 704px;    
+        height: auto;    
+    }
+
+    .caja-experiencia .encriptador,
+    .caja-experiencia .ahorcado{
+        width: 704px;    
+        margin: 0 auto;
+    }
 }

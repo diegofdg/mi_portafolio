@@ -8,7 +8,7 @@
     <title>Mi Portafolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/tablet.css">
@@ -44,13 +44,13 @@
                 <p>Soy Contador Público y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p>
                 <div class="redes-sociales">
                     <p>GitHub</p>
-                    <a href="https://github.com/diegofdg/" target="_blank"><img src="img/arrow.svg" alt="imagen fe"></a>
+                    <a href="https://github.com/diegofdg/" target="_blank"><img src="img/arrow.svg" alt="imagen flecha"></a>
                     <p>Linkedln</p>
-                    <a href="https://www.linkedin.com/in/diego-di-giorgio/" target="_blank"><img src="img/arrow.svg" alt="imagen fe"></a>
+                    <a href="https://www.linkedin.com/in/diego-di-giorgio/" target="_blank"><img src="img/arrow.svg" alt="imagen flecha"></a>
                     <p>Instagram</p>
-                    <a href="https://www.instagram.com/digiorgiodiego/" target="_blank"><img src="img/arrow.svg" alt="imagen fe"></a>
+                    <a href="https://www.instagram.com/digiorgiodiego/" target="_blank"><img src="img/arrow.svg" alt="imagen flecha"></a>
                     <p>Currículo</p>
-                    <a href="https://twitter.com/diegofdg" target="_blank"><img src="img/arrow.svg" alt="imagen fe"></a>
+                    <a href="https://drive.google.com/file/d/1HmG3RssUGLr9_RLkdAeXj82iXbF_jx4W/view?usp=sharing" target="_blank"><img src="img/arrow.svg" alt="imagen flecha"></a>
                 </div>
             </div>        
             <div class="hero-imagen">
@@ -202,5 +202,84 @@
             </div>
         </div>        
     </section>
+
+    <section id="experiencia">
+        <h2>Experiencia profesional</h2>
+        <div class="experiencia contenedor">
+            <div class="item-experiencia">
+                <div class="caja-experiencia">
+                    <img src="img/experiencia/encriptador.png" alt="vista previa encriptador" class="encriptador">
+                </div>
+                <div class="texto-experiencia">
+                    <h4>Encriptador de Texto con JavaScript</h4>                
+                    <p>Challenge 1 - Programa ONE</p>
+                    <div class="botones">
+                        <a id="repositiorio-encriptador" href="https://github.com/diegofdg/encriptador_de_texto" target="_blank" class="boton-repositorio">Repositorio</a>                    
+                        <a id="demo-encriptador" href="https://diegofdg.github.io/encriptador_de_texto/" target="_blank" class="boton-demo">Ver Demo</a>                                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="experiencia contenedor">
+            <div class="item-experiencia reverse">
+                <div class="caja-experiencia">
+                    <img src="img/experiencia/ahorcado.png" alt="vista previa ahorcado" class="ahorcado">
+                </div>
+                <div class="texto-experiencia">
+                    <h4>Juego del Ahorcado con JavaScript</h4>                
+                    <p>Challenge 2 - Programa ONE</p>
+                    <div class="botones">
+                        <a href="https://github.com/diegofdg/juego_ahorcado" target="_blank" class="boton-repositorio">Repositorio</a>                    
+                        <a href="https://diegofdg.github.io/juego_ahorcado/" target="_blank" class="boton-demo">Ver Demo</a>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">           
+        <div class="contacto contenedor">
+            <div>
+                <img src="img/contacto.png" class="contacto-imagen" alt="imagen telefono">
+            </div>
+            <div>
+                <h2>Contacto</h2>     
+                <form class="formulario">                
+                    <p>¿Quieres contactarme?.</p>
+                    <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+    
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Tu Nombre" />
+                        </div>
+    
+                        <div class="campo">
+                            <label>E-mail</label>
+                            <input type="email" placeholder="Tu Email" />                    
+                        </div>
+    
+                        <div class="campo">
+                            <input class="asunto" type="text" placeholder="Asunto" />                    
+                        </div>
+    
+                        <div class="campo mensaje">                        
+                            <textarea class="text-area" placeholder="Mensaje"></textarea>                    
+                        </div>
+                    </div>
+    
+                    <div>
+                        <input type="submit" class="boton-enviar" value="Enviar mensaje">                    
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer contenedor">
+        <p>Hecho con <span class="corazon">❤</span> por <span>Diego Fabián Di Giorgio</span> | &copy; 2022</p>
+    </footer>
 </body>
 </html>
