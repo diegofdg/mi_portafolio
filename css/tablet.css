@@ -43,6 +43,7 @@
     .hero-imagen img{
         border-radius: 50%;
         width: 146px;   
+        padding: 2rem;  
     }
     .hero-imagen{
         display: flex;
