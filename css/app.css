@@ -426,7 +426,8 @@ main{
     background-color: var(--blanco);
     padding: .5rem 1rem 1rem;
     margin: 2rem 0;   
-    height: 68px; 
+    /* height: 68px; */
+
 }
 
 .campo label{
@@ -441,7 +442,6 @@ main{
     font-weight: 400;
     width: 100%;
     color: var(--negro);
-    background: inherit;
 }
 
 .campo.mensaje{
@@ -503,7 +503,7 @@ main{
     background-color: var(--rosado);    
     padding: 1rem;    
     font-size: 1.3rem;    
-    margin: 0 auto;
+    margin: 1rem auto;
     color: var(--rojo);   
     text-align: center; 
     text-transform: uppercase;
