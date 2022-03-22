@@ -1,3 +1,4 @@
+const formulario = document.getElementById('formulario');
 const formularioNombre = document.getElementById('formulario-nombre');
 const formularioEmail = document.getElementById('formulario-email');
 const formularioAsunto = document.getElementById('formulario-asunto');
@@ -9,19 +10,19 @@ const expresionRegular = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|
 iniciarApp();
 
 function iniciarApp() {
-    agregarEventListeners();
+    agregarEventListeners();    
 };
 
 function agregarEventListeners() {
     document.addEventListener('DOMContentLoaded', () => {
-        btnEnviar.addEventListener('click', enviarFormulario);        
+        formulario.addEventListener('submit', enviarFormulario);        
     });
 }
 
 function enviarFormulario(e) {
     e.preventDefault();
     console.log("Enviando formulario");  
-    validarCampos();  
+    validarCampos();
 }
 
 function validarCampos(){
@@ -31,52 +32,65 @@ function validarCampos(){
     const mensaje = formularioMensaje.value;
     
     if(nombre == ''){
-        mensajeError('El nombre no puede ir vacío');
+        mostrarMensaje('El nombre no puede ir vacío', 'error');
         return;
     }
 
     if(nombre.length > 50){
-        mensajeError('El nombre no puede contener más de 50 caracteres');        
+        mostrarMensaje('El nombre no puede contener más de 50 caracteres', 'error');        
         return;
     }    
 
     if(email == ''){
-        mensajeError('El email no puede ir vacío');
+        mostrarMensaje('El email no puede ir vacío', 'error');
         return;
     }
 
     if(!expresionRegular.test(email)) {
-        mensajeError('El email no es válido');
+        mostrarMensaje('El email no es válido', 'error');
         return;
     }
 
     if(asunto == ''){
-        mensajeError('El asunto no puede ir vacío');
+        mostrarMensaje('El asunto no puede ir vacío', 'error');
         return;
     }
 
     if(asunto.length > 50){
-        mensajeError('El asunto no puede contener más de 50 caracteres');        
+        mostrarMensaje('El asunto no puede contener más de 50 caracteres', 'error');        
         return;
     }    
 
     if(mensaje == ''){
-        mensajeError('El mensaje no puede ir vacío');
+        mostrarMensaje('El mensaje no puede ir vacío', 'error');
         return;
     }
 
     if(mensaje.length > 300){
-        mensajeError('El mensaje no puede contener más de 300 caracteres');        
+        mostrarMensaje('El mensaje no puede contener más de 300 caracteres', 'error');        
         return;
-    }    
+    }  
+    
+    const spinner = document.querySelector('#spinner');
+    spinner.style.display = 'flex';
+
+    setTimeout(()=>{
+        spinner.style.display = 'none';
+        mostrarMensaje('El email se ha enviado exitosamente', 'exito');
+    }, 3000);
 }
 
-function mensajeError(mensaje) {
-    const mensajeError = document.querySelector('.mensaje-error');
+function mostrarMensaje(mensaje, tipo) {
+    let mostrarMensaje;
+    if(tipo == 'error'){
+        mostrarMensaje = document.querySelector('.error');
+    } else if (tipo == 'exito'){
+        mostrarMensaje = document.querySelector('.exito');
+    }    
     
-    if(!mensajeError) {            
+    if(!mostrarMensaje) {            
         const divMensaje = document.createElement('div');
-        divMensaje.classList.add('mensaje-error');    
+        divMensaje.classList.add(tipo);    
         divMensaje.textContent = mensaje;            
         contenedorCampos.appendChild(divMensaje);  
         btnEnviar.style.display = 'none';
