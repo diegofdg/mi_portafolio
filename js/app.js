@@ -27,6 +27,7 @@ function enviarFormulario(e) {
 function validarCampos(){
     const nombre = formularioNombre.value;
     const email = formularioEmail.value;
+    const asunto = formularioAsunto.value;
     
     if(nombre == ''){
         mensajeError('El nombre no puede ir vacío');
@@ -47,6 +48,16 @@ function validarCampos(){
         mensajeError('El email no es válido');
         return;
     }
+
+    if(asunto == ''){
+        mensajeError('El asunto no puede ir vacío');
+        return;
+    }
+
+    if(asunto.length > 50){
+        mensajeError('El asunto no puede contener más de 50 caracteres');        
+        return;
+    }    
 }
 
 function mensajeError(mensaje) {
