@@ -10,7 +10,7 @@
     --azul: #2A7AE4;
     --grisOscuro: #A2A2A2;
     --verde: #cff4fc;
-    --azulOscuro: #055160; 
+    --verdeOscuro: #008000;
     --rosado: #f8d7da; 
     --rojo: #842029;
 }
@@ -492,7 +492,7 @@ main{
     padding: 1rem;    
     font-size: 1.3rem;    
     margin: 1rem auto;
-    color: var(--azulOscuro);   
+    color: var(--verdeOscuro);   
     text-align: center; 
     text-transform: uppercase;
     font-weight: bold;        
