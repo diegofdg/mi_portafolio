@@ -511,6 +511,10 @@ main{
     width: 100%;
 }
 
+.disabled {
+    opacity: 0.5;
+}
+
 /*** Spinner ***/
 #spinner {
     display: none;
